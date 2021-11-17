@@ -163,7 +163,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/11/17/ti/" class="post-title-link" itemprop="url">前端面试题</a>
+            <a href="/2021/11/17/ti/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-11-17 19:40:24 / 修改时间：19:42:33" itemprop="dateCreated datePublished" datetime="2021-11-17T19:40:24+08:00">2021-11-17</time>
+              <time title="创建时间：2021-11-17 19:40:24 / 修改时间：19:47:46" itemprop="dateCreated datePublished" datetime="2021-11-17T19:40:24+08:00">2021-11-17</time>
             </span>
 
           
@@ -188,9 +188,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="前端常见高频面试题"><a href="#前端常见高频面试题" class="headerlink" title="前端常见高频面试题"></a>前端常见高频面试题</h1><p>[TOC]</p>
-<h3 id="1、什么是mvvm-、-mvc-模型？"><a href="#1、什么是mvvm-、-mvc-模型？" class="headerlink" title="1、什么是mvvm  、 mvc 模型？"></a>1、什么是mvvm  、 mvc 模型？</h3><p><img src="../../../../%E5%89%8D%E7%AB%AF%E5%B8%B8%E8%A7%81%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/images/mvc.jpg">MVC*: MVC即model-view-controller（模型-视图-控制器）是项目的一种分层架构思想，它把复杂的业务逻辑，抽离为职能单一的小模块，每个模块看似相互独立，其实又各自有相互依赖关系。它的好处是：保证了模块的智能单一性，方便程序的开发、维护、耦合度低。</p>
-<p><img src="../../../../%E5%89%8D%E7%AB%AF%E5%B8%B8%E8%A7%81%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/images/mvvm.png"></p>
+          <p>title: 前端面试题<br>date: 2021-11-17 19:40:24<br>tags:</p>
+<h1 id="前端常见高频面试题"><a href="#前端常见高频面试题" class="headerlink" title="前端常见高频面试题"></a>前端常见高频面试题</h1><p>[TOC]</p>
+<h3 id="1、什么是mvvm-、-mvc-模型？"><a href="#1、什么是mvvm-、-mvc-模型？" class="headerlink" title="1、什么是mvvm  、 mvc 模型？"></a>1、什么是mvvm  、 mvc 模型？</h3><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/78b85ad55a55454bbf3db4f2e7c49712~tplv-k3u1fbpfcp-watermark.awebp" alt="mvc.jpg"></p>
+<p>!MVC*: MVC即model-view-controller（模型-视图-控制器）是项目的一种分层架构思想，它把复杂的业务逻辑，抽离为职能单一的小模块，每个模块看似相互独立，其实又各自有相互依赖关系。它的好处是：保证了模块的智能单一性，方便程序的开发、维护、耦合度低.</p>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7d3b74d78d5421882d34ade819bdce6~tplv-k3u1fbpfcp-watermark.awebp" alt="mvvm.png"></p>
 <p>mvvm: <em>MVVM</em>：MVVM即 <em>Model-View-ViewModel</em>，(模型-视图-控制器)它是一种双向数据绑定的模式，用viewModel来建立起model数据层和view视图层的连接，数据改变会影响视图，视图改变会影响数据</p>
 <h3 id="2、vue双向数据绑定的原理？"><a href="#2、vue双向数据绑定的原理？" class="headerlink" title="2、vue双向数据绑定的原理？"></a>2、vue双向数据绑定的原理？</h3><p>　　vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。</p>
 <p>　　具体步骤：</p>
@@ -201,8 +203,8 @@
 <p>　　2、自身必须有一个update()方法</p>
 <p>　　3、待属性变动dep.notice()通知时，能调用自身的 update() 方法，并触发Compile中绑定的回调，则功成身退。</p>
 <p>　　第四步：MVVM作为数据绑定的入口，整合Observer、Compile和Watcher三者，通过Observer来监听自己的model数据变化，通过Compile来解析编译模板指令，最终利用Watcher搭起Observer和Compile之间的通信桥梁，达到数据变化 -&gt; 视图更新；视图交互变化(input) -&gt; 数据model变更的双向绑定效果。</p>
-<p><img src="../../../../%E5%89%8D%E7%AB%AF%E5%B8%B8%E8%A7%81%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/images/v-model.png"></p>
-<h3 id="3、vue的生命周期有哪些？"><a href="#3、vue的生命周期有哪些？" class="headerlink" title="3、vue的生命周期有哪些？"></a>3、vue的生命周期有哪些？</h3><p><img src="../../../../%E5%89%8D%E7%AB%AF%E5%B8%B8%E8%A7%81%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/images/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0%E8%AF%A6%E8%A7%A3.png"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d02019c3a0cc475da086b637b4355462~tplv-k3u1fbpfcp-watermark.awebp" alt="v-model.png"></p>
+<h3 id="3、vue的生命周期有哪些？"><a href="#3、vue的生命周期有哪些？" class="headerlink" title="3、vue的生命周期有哪些？"></a>3、vue的生命周期有哪些？</h3><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/68c0caddcb01458981554438a4d61b86~tplv-k3u1fbpfcp-watermark.awebp" alt="vue生命周期函数详解.png"></p>
 <p>　vue 实例从创建到销毁的过程就是生命周期。</p>
 <p>　　也就是从开始创建、初始化数据、编译模板、挂在 dom -&gt; 渲染、更新 -&gt; 渲染、准备销毁、销毁在等一系列过程</p>
 <p>vue的声明周期常见的主要分为4大阶段8大钩子函数</p>
